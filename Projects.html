@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .inner {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .project-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
+
+        .project-row {
+            display: flex;
+            align-items: center;
+            gap: 2em;
+        }
+
+        .project-row img {
+            width: 300px;
+            height: auto;
+            border: 3px solid #ddd;
+            border-radius: 8px;
+            display: block;
+        }
+
+        .project-description {
+            max-width: 700px;
+        }
+
+        .project-description p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .view-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .view-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000; /* High z-index to be on top of other elements */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: auto;
+            height: auto;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .modal img {
+            width: 100%;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Additional section styles */
+        .more-projects {
+            text-align: center;
+            margin-top: 3em;
+            padding: 2em;
+            background-color: #007bff;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .more-projects h2 {
+            margin-bottom: 1em;
+            font-size: 24px;
+        }
+
+        .more-projects p {
+            font-size: 18px;
+            margin-bottom: 1em;
+        }
+
+        .more-projects .more-button,
+        .more-projects .contact-button {
+            background-color: white;
+            color: #007bff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .more-projects .more-button:hover,
+        .more-projects .contact-button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .project-row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .project-row img {
+                width: 100%;
+            }
+
+            .project-description {
+                max-width: 100%;
+            }
+
+            .project-description h2 {
+                color: orangered;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Juan Miguel</span> Morales</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Portfolio</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Achievements.html">Achievements</a>
+            <a href="#">Education</a>
+        </nav>
+        <a href="#" class="contact">Contact Me</a>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="inner">
+        <h1>My Projects</h1>
+        <div class="project-container">
+            <div class="project-row">
+                <img src="project1.jpeg" alt="Project 1" class="project-img" data-src="project1.jpeg">
+                <div class="project-description">
+                    <h2>Flux</h2>
+                    <hr>
+                    <p>Flux is an online personal expense tracker. This capstone project earned us the award for 'Best in Research' in the ICT TVL track, as well as recognition for 'Best in Capstone Project.</p>
+                    <button class="view-button" data-src="project1.jpeg">View</button>
+                </div>
+            </div>
+
+            <div class="project-row">
+                <img src="project2.jpeg" alt="Project 2" class="project-img" data-src="project2.jpeg">
+                <div class="project-description">
+                    <h2>Teacher Collaboration Project</h2>
+                    <hr>
+                    <p>Our computer programming and math teachers collaborated on this project, tasking us with creating a calculator that covers all the topics discussed in our statistics and probability lessons. It was quite challenging and time-consuming, and this calculator is just one of many we've worked on.</p>
+                    <button class="view-button" data-src="project2.jpeg">View</button>
+                </div>
+            </div>
+
+            <div class="project-row">
+                <img src="project3.jpeg" alt="Project 3" class="project-img" data-src="project3.jpeg">
+                <div class="project-description">
+                    <h2>My First Project</h2>
+                    <hr>
+                    <p>I remember this HTML and CSS project as my very first coding experience. It’s a fun memory and quite nostalgic, especially considering it was two years ago. I hadn’t learned GitHub at that time, so I wasn’t able to save the project—just some screenshots of the documentation.</p>
+                    <button class="view-button" data-src="project3.jpeg">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional section for more projects and contact -->
+    <div class="more-projects">
+        <h2>Want to Learn More?</h2>
+        <p>Check out my other projects or contact me for more details!</p>
+        <a href="#" class="more-button">See More Projects</a>
+        <a href="#" class="contact-button">Contact Me</a>
+    </div>
+
+    <!-- Modal for image preview -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        // Get modal element
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var span = document.getElementsByClassName("close")[0];
+
+        // Get all view buttons
+        var viewButtons = document.querySelectorAll('.view-button');
+
+        viewButtons.forEach(function(button) {
+            button.onclick = function() {
+                var imgSrc = this.getAttribute('data-src');
+                modal.style.display = "flex";
+                modalImg.src = imgSrc;
+            }
+        });
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
