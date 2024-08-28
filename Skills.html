@@ -141,7 +141,9 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><span>Juan Miguel</span>Morales</a>
+        <button class="toggle-button" aria-label="Toggle navigation">&#9776;</button>
+
+        <a href="index.html" class="logo"><span>Juan Miguel</span>Morales</a>
         <nav class="navbar">
             <a href="index.html" class="active">Portfolio</a>
             <a href="Skills.html">Skills</a>
@@ -296,5 +298,18 @@
         <p>Want to know more about my skills? Feel free to contact me or explore my other projects.</p>
         <a href="#">Contact Me</a>
     </footer>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbar = document.querySelector('.navbar');
+        
+            toggleButton.addEventListener('click', function() {
+                navbar.classList.toggle('active');
+            });
+        });
+        
+            </script>
 </body>
 </html>

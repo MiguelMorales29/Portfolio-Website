@@ -14,13 +14,16 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo"><span>Juan Miguel</span>Morales</a>
+        <button class="toggle-button" aria-label="Toggle navigation">&#9776;</button>
+
+        <a href="index.html" class="logo"><span>Juan Miguel</span>Morales</a>
         <nav class="navbar">
             <a href="index.html" class="active">Portfolio</a>
             <a href="Skills.html">Skills</a>
             <a href="Projects.html">Projects</a>
             <a href="Achievements.html">Achievements</a>
             <a href="#">Education</a>
+            
         </nav>
 
 
@@ -68,7 +71,7 @@
                 websites, apps, and games is my passion. This field in technology excites me, and I am eager to continue
                 learning and growing within it. Additionally, I enjoy designing graphics and motion content using tools
                 like Adobe Photoshop, Illustrator, and CapCut.</p>
-            <a href="#" class="btn-2">Experience</a>
+            <a href="#" class="btn-2" style="align-items: center;">Experience</a>
         </div>
     </section>
     <section class="contact-form" >
@@ -124,6 +127,18 @@
 
     </footer>
 
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.querySelector('.toggle-button');
+    const navbar = document.querySelector('.navbar');
+
+    toggleButton.addEventListener('click', function() {
+        navbar.classList.toggle('active');
+    });
+});
+
+    </script>
 
 </body>
 

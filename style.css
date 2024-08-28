@@ -1,17 +1,13 @@
 * {
-
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
-
-
 }
 
 .header {
-
     position: fixed;
     top: 0;
     left: 0;
@@ -23,39 +19,19 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
 }
 
 .logo {
-
     font: 25px;
     color: white;
     font-weight: 600;
     transition: 0.3s ease;
-
 }
 
 .logo:hover {
-
     color: orangered;
-    text-shadow: 0 0 25px orangered,
-        0 0 50px orangered;
-
+    text-shadow: 0 0 25px orangered, 0 0 50px orangered;
     transform: scale(1.1);
-
-
-}
-
-span {
-    color: orangered;
-}
-
-.span2 {
-    font-size: 50px;
-    text-decoration: none;
-    color: black;
-    font-style: italic;
-
 }
 
 .navbar a {
@@ -65,18 +41,15 @@ span {
     margin: 0 20px;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
-
 }
 
 .navbar a:hover,
 .navbar a.active {
     color: orangered;
     border-bottom: 3px solid orangered;
-
 }
 
 .contact {
-
     padding: 10px 28px;
     background-color: white;
     color: black;
@@ -92,13 +65,20 @@ span {
     background-color: orangered;
     box-shadow: 0 0 25px orange;
     color: white;
+}
 
+span {
+    color: orangered;
+}
 
-
+.span2 {
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    font-style: italic;
 }
 
 .home {
-
     width: 100%;
     min-height: 100vh;
     background: rgb(241, 241, 241);
@@ -106,14 +86,11 @@ span {
     align-items: center;
     gap: 7em;
     padding: 30px 12% 0;
-
-
+    flex-direction: row; /* Default for larger screens */
 }
 
 .home-content {
     max-width: 800px;
-
-
 }
 
 .home-content h3 {
@@ -124,7 +101,6 @@ span {
     font-size: 30px;
     line-height: 1.2;
     text-align: justify;
-
 }
 
 .home-content p {
@@ -178,23 +154,22 @@ span {
 .img-box img {
     border-radius: 50%;
     width: 550px;
-    
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 15px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: orangered;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 6);
     width: 50px;
 }
 
-.about{
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,62 +178,60 @@ span {
     background: black;
 }
 
-.about-img img{
-    position:relative;
+.about-img img {
+    position: relative;
     width: 500px;
     border: 8px solid white;
-    box-shadow: 0 0 15px rgb(0, 217, 255);;
+    box-shadow: 0 0 15px rgb(0, 217, 255);
     overflow: hidden;
-        transform: rotate(-5deg); /* Slight rotation */
-        transition: transform 0.3s ease; /* Smooth transition effect */
+    transform: rotate(-5deg); /* Slight rotation */
+    transition: transform 0.3s ease; /* Smooth transition effect */
 }
+
 .about-img:hover img {
     transform: rotate(0deg); /* Rotate back to normal on hover */
 }
 
-.about-content h2{
+.about-content h2 {
     text-align: left;
     color: white;
     font-size: 42px;
 }
-.about-content h3{
+
+.about-content h3 {
     font-size: 56px;
     color: white;
 }
 
-.about-content p{
+.about-content p {
     color: white;
     font-size: 20px;
     margin: 2em 0 3em;
+    text-align: justify;
 }
 
-.contact-form h2{
+.contact-form h2 {
     text-align: center;
     margin-top: 3em;
     margin-bottom: 1em;
     font-size: 36px;
-
 }
 
-
-
-.contact-form form{
+.contact-form form {
     max-width: 50em;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3em;
-
 }
 
-.contact-form form .input-box{
+.contact-form form .input-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 
 .contact-form form .input-box input,
-.contact-form form textarea{
+.contact-form form textarea {
     width: 100%;
     padding: 1.5em;
     font-size: 18px;
@@ -267,10 +240,8 @@ span {
     border-radius: .8rem;
     margin: 1rem 0;
     resize: none;
-    
-
-    
 }
+
 .contact-form {
     position: relative;
     padding: 2em;
@@ -284,36 +255,35 @@ span {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; 
-    height: 100%; 
-    background-image: url('plane.png'); 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: 90%; 
-    transform: rotate(10deg); 
-    opacity: 0.1; 
-    z-index: -1; 
+    width: 100%;
+    height: 100%;
+    background-image: url('plane.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    transform: rotate(10deg);
+    opacity: 0.1;
+    z-index: -1;
 }
 
-.footer{
+.footer {
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 40px 0;
     background-color: black;
-
 }
 
-.footer .social{
+.footer .social {
     text-align: center;
     padding-bottom: 25px;
     color: white;
 }
 
-.footer .social a{
+.footer .social a {
     font-size: 24px;
     color: white;
-    border: 2px sold orangered;
+    border: 2px solid orangered;
     width: 40px;
     height: 40px;
     line-height: 38px;
@@ -321,49 +291,188 @@ span {
     text-align: center;
     border-radius: 50%;
     margin: 0 8px;
-    box-shadow:  inset 0 0 10px orangered, 0 0 10px orangered;
+    box-shadow: inset 0 0 10px orangered, 0 0 10px orangered;
     transition: 0.3s ease;
-
 }
 
-.footer .social a:hover{
-  transform: scale(1.2)translateY(-10);
-  color: orangered;
-  border: 2px solid orangered;
+.footer .social a:hover {
+    transform: scale(1.2) translateY(-10);
+    color: orangered;
+    border: 2px solid orangered;
 }
 
-.footer ul{
+.footer ul {
     margin-top: 0;
     padding: 0;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 0;
     text-align: center;
-
 }
 
-.footer ul li a{
+.footer ul li a {
     color: white;
     border-bottom: 3px solid transparent;
     transition: 0.3 ease;
-
 }
 
-.footer ul li a:hover{
-
+.footer ul li a:hover {
     border-bottom: 3px solid orangered;
- 
 }
-  
-.footer ul li{
+
+.footer ul li {
     display: inline-block;
     padding: 0 15px;
 }
 
-.footer .copyright{
+.footer .copyright {
     margin-top: 15px;
     text-align: center;
     font-size: 12px;
     color: white;
+}
 
+@media screen and (max-width: 600px) {
+    .header {
+        padding: 20px 10%;
+    }
+
+    .navbar {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar.active {
+        display: flex; /* Show navigation links when active */
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .toggle-button {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s ease;
+        padding-right: 5%;
+        margin-left: -5%;
+    }
+
+    .toggle-button:hover {
+        color: orangered;
+    }
+
+    /* Hide contact button on small screens */
+    .contact {
+        display: none;
+    }
+
+    .home {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        gap: 0; /* Remove gap for stacked layout */
+    }
+
+    .img-box {
+        order: -1; /* Ensure the image comes first */
+    }
+
+    .img-box img {
+        width: 300px; /* Adjust width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    
+
+    .home-content {
+        max-width: 300px;
+    }
+
+    .home-content h3 {
+        font-size: 32px;
+    }
+
+    .home-content h1 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        font-size: 15px;
+    }
+
+    .btn-box {
+        width: 100%; /* Make the button container full-width on smaller screens */
+        gap: 1em; /* Reduce the gap between buttons */
+        margin-bottom: 10%;
+    }
+
+    .btn-1, .btn-2 {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Reduce font size */
+        letter-spacing: 0.5px; /* Adjust letter spacing */
+        width: 100%; /* Make buttons full-width */
+    }
+
+
+
+    /* About section adjustments */
+    .about {
+        flex-direction: column; /* Stack items vertically */
+        gap: 2em; /* Reduce the gap between image and content */
+        padding: 10% 2%; /* Adjust padding */
+    }
+
+    .about-img img {
+        width: 100%; /* Make image responsive */
+        max-width: 400px; /* Limit max width */
+        border: 5px solid white; /* Adjust border thickness */
+        box-shadow: 0 0 10px rgb(0, 217, 255); /* Adjust shadow */
+    }
+
+    .about-content h2 {
+        font-size: 28px; /* Reduce font size */
+        text-align: center; /* Center align text */
+    }
+
+    .about-content h3 {
+        font-size: 36px; /* Reduce font size */
+        text-align: center; /* Center align text */
+    }
+
+    .about-content p {
+        font-size: 14px; /* Reduce font size */
+        margin: 1em 0; /* Adjust margin */
+        text-align: center; /* Center align text */
+     
+    }
+    #experience-btn {
+        display: block;
+        margin: 0 auto;
+        text-align: center; /* Optional: centers text inside the button */
+        font-size: 16px; /* Adjust font size if needed */
+        padding: 12px 24px; /* Adjust padding if needed */
+    }
+ 
+
+    
+}
+
+@media (min-width: 768px) {
+    .toggle-button {
+        display: none;
+    }
+    
 }

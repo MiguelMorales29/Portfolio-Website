@@ -29,6 +29,7 @@
             display: flex;
             flex-direction: column;
             gap: 2em;
+            text-align: justify;
         }
 
         .project-row {
@@ -176,7 +177,9 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><span>Juan Miguel</span> Morales</a>
+                <button class="toggle-button" aria-label="Toggle navigation">&#9776;</button>
+
+        <a href="index.html" class="logo"><span>Juan Miguel</span> Morales</a>
         <nav class="navbar">
             <a href="index.html" class="active">Portfolio</a>
             <a href="Skills.html">Skills</a>
@@ -267,7 +270,16 @@
             if (event.target == modal) {
                 modal.style.display = "none";
             }
+            
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.querySelector('.toggle-button');
+            const navbar = document.querySelector('.navbar');
+        
+            toggleButton.addEventListener('click', function() {
+                navbar.classList.toggle('active');
+            });
+        });
     </script>
 </body>
 </html>
